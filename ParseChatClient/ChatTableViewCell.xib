@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="ChatTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="This is my chat text " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyI-zy-AI2">
+                        <rect key="frame" x="55.5" y="10" width="259.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTo-pn-cNA">
+                        <rect key="frame" x="5" y="11" width="45.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qyI-zy-AI2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="8gk-YP-MdG"/>
+                    <constraint firstAttribute="trailing" secondItem="qyI-zy-AI2" secondAttribute="trailing" constant="5" id="BxH-Vl-BP1"/>
+                    <constraint firstItem="qyI-zy-AI2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="Kc3-u6-62I"/>
+                    <constraint firstAttribute="bottom" secondItem="qyI-zy-AI2" secondAttribute="bottom" constant="5" id="Ksg-hu-onV"/>
+                    <constraint firstAttribute="trailing" secondItem="qyI-zy-AI2" secondAttribute="trailing" constant="5" id="YGH-g8-f9x"/>
+                    <constraint firstItem="qyI-zy-AI2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cZZ-Xf-VUo"/>
+                    <constraint firstItem="gTo-pn-cNA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="h2V-m6-BiR"/>
+                    <constraint firstItem="gTo-pn-cNA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="lyn-y9-clw"/>
+                    <constraint firstItem="qyI-zy-AI2" firstAttribute="leading" secondItem="gTo-pn-cNA" secondAttribute="trailing" constant="5" id="nMh-dG-R0I"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="8gk-YP-MdG"/>
+                        <exclude reference="Kc3-u6-62I"/>
+                        <exclude reference="Ksg-hu-onV"/>
+                        <exclude reference="YGH-g8-f9x"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="chatLabel" destination="qyI-zy-AI2" id="BhI-6I-j5e"/>
+                <outlet property="nameLabel" destination="gTo-pn-cNA" id="bMP-IX-bHg"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
